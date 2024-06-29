@@ -93,6 +93,7 @@ public class Main {
                             command = scanner.nextLine();
 
                             db.updateName(conn, "player_accounts", user, command);
+                            user = command;
                             break;
                         }
                         else {

@@ -82,7 +82,7 @@ public class DbFunctions {
     public void updateName(Connection conn, String tableName, String oldName, String newName) {
         Statement statement;
         try {
-            String query = String.format("update %s set name='%s' where name='%s'", tableName, newName, oldName);
+            String query = String.format("update %s set username='%s' where username='%s'", tableName, newName, oldName);
             statement=conn.createStatement();
             statement.executeUpdate(query);
             System.out.println("User name updated");
